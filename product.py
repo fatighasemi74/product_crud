@@ -39,11 +39,18 @@ class Product:
         for item in self.product:
             return item
 
-    def update(self):
-        pass
+    def update(self, item, updated_item):
+        for i in self.products:
+            if i == item:
+                item = updated_item
+                print('updated')
+                return self.products[i].__repr__()
+            else:
+                ("nothing to update")
+
 
     def delete(self, item):
-        if self.products == []
+        if self.products == []:
             print('nothing to delete')
         else:
             self.products.remove(item)
