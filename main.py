@@ -1,16 +1,12 @@
-# This is a sample Python script.
-
-# Press ⌃R to execute it or replace it with your code.
-# Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
+from product import Product
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press ⌘F8 to toggle the breakpoint.
 
+example = Product(1, 1, "title", 'this is short_description', 'this is the description!!',
+                  'slug', 'permalink', True, 'sku', '1000', '110', '11100', 'manage_stock',
+                  'stock_quantity', True, 'date_created_gmt', 'date_modified_gmt')
+print(example.create())
+print(example.read())
+print(example.delete())
+print(example.update())
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/

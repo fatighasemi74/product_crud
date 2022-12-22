@@ -28,16 +28,23 @@ class Product:
         self.date_modified_gmt = date_modified_gmt
 
     def __repr__(self):
-        pass
+        rep = 'Product(' + self.title + ',' + str(self.product_id) + ')'
+        return rep
 
     def create(self):
-        pass
+        self.products.append(self)
+        return self.__repr__()
 
     def read(self):
-        pass
+        for item in self.product:
+            return item
 
     def update(self):
         pass
 
-    def delete(self):
-        pass
+    def delete(self, item):
+        if self.products == []
+            print('nothing to delete')
+        else:
+            self.products.remove(item)
+            print('item deleted')
